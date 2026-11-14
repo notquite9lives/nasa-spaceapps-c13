@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bdfs0pb6o4i72"]
+
+[ext_resource type="Theme" uid="uid://cbkdf74317cso" path="res://new_theme.tres" id="1_baqto"]
+[ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/new_theme.tres" id="1_opfma"]
+[ext_resource type="Texture2D" uid="uid://caxff6ywccegi" path="res://assets/2-option-buttons.svg" id="2_1x2k8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n73l5"]
+texture = ExtResource("2_1x2k8")
+texture_margin_right = 3.4522736
+region_rect = Rect2(89.2442, 187.15385, 262.75598, 378.58112)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y8r6o"]
+texture = ExtResource("2_1x2k8")
+region_rect = Rect2(90.3999, 191.09982, 260.69995, 373.89017)
+
+[node name="3_option" type="Node2D" unique_id=891577447]
+position = Vector2(26, 14)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=346002944]
+
+[node name="Control" type="Control" parent="." unique_id=795916465]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control" unique_id=1970635668]
+layout_mode = 0
+offset_left = -429.0
+offset_top = -12.0
+offset_right = -217.0
+offset_bottom = 275.0
+theme = ExtResource("1_opfma")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+text = "opt a"
+
+[node name="Button2" type="Button" parent="Control" unique_id=854132875]
+layout_mode = 0
+offset_left = 177.0
+offset_top = -14.0
+offset_right = 421.0
+offset_bottom = 102.0
+text = "opt b"
+
+[node name="Button3" type="Button" parent="Control" unique_id=262357077]
+physics_interpolation_mode = 1
+texture_filter = 1
+layout_mode = 0
+offset_left = -133.0
+offset_top = -10.0
+offset_right = 82.0
+offset_bottom = 275.0
+theme = ExtResource("1_baqto")
+theme_override_styles/normal = SubResource("StyleBoxTexture_y8r6o")
+text = "opt c"
+
+[node name="Label" type="Label" parent="Control" unique_id=1756482649]
+layout_mode = 0
+offset_left = -287.0
+offset_top = -182.0
+offset_right = 244.0
+offset_bottom = -94.0
+theme = ExtResource("1_baqto")
+theme_override_font_sizes/font_size = 64
+text = "option"
+horizontal_alignment = 1

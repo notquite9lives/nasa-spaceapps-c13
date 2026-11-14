@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dohjgq1ll5xcu"]
+
+[ext_resource type="Texture2D" uid="uid://chaak71qqdxgo" path="res://assets/ad-astra-logo.svg" id="1_y8r6o"]
+
+[sub_resource type="Animation" id="Animation_y8r6o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(568.8741, 362.7074)]
+}
+
+[sub_resource type="Animation" id="Animation_d11bo"]
+resource_name = "dreemur"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(568.8741, 362.7074), Vector2(550.00006, 275)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eyb3s"]
+_data = {
+&"RESET": SubResource("Animation_y8r6o"),
+&"dreemur": SubResource("Animation_d11bo")
+}
+
+[node name="ad_logo" type="Sprite2D" unique_id=72871442]
+
+[node name="AdAstraLogo" type="Sprite2D" parent="." unique_id=359573458]
+physics_interpolation_mode = 1
+texture_filter = 1
+position = Vector2(568.8741, 362.7074)
+scale = Vector2(2.288413, 1.7128228)
+texture = ExtResource("1_y8r6o")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AdAstraLogo" unique_id=1662077872]
+libraries/ = SubResource("AnimationLibrary_eyb3s")
+autoplay = &"dreemur"

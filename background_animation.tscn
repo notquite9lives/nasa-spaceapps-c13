@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://dwr7yo0dws3uc"]
+
+[ext_resource type="Texture2D" uid="uid://5fkf5dkpf2ns" path="res://assets/star_background.svg" id="1_lf6ac"]
+
+[sub_resource type="Animation" id="Animation_keybg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_opm6b"]
+resource_name = "starts"
+length = 30.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 29.999277),
+"transitions": PackedFloat32Array(1, 1.0000001),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-2299.332, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wlam2"]
+_data = {
+&"RESET": SubResource("Animation_keybg"),
+&"starts": SubResource("Animation_opm6b")
+}
+
+[node name="Sprite2D" type="Sprite2D" unique_id=733503893]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_lf6ac")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2128378447]
+position = Vector2(1916.6653, 0)
+texture = ExtResource("1_lf6ac")
+flip_v = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1428590268]
+position = Vector2(3833.3267, 0)
+texture = ExtResource("1_lf6ac")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1797435280]
+libraries/ = SubResource("AnimationLibrary_wlam2")
+autoplay = &"starts"

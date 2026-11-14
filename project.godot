@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[addons]
+
+curved_lines_2d/ellipse_center_offset=false
+curved_lines_2d/rect_create_as_path=false
+curved_lines_2d/fill_in_parent_shape_with_brush=false
+
+[application]
+
+config/name="NASA #13 Ad-Astra"
+run/main_scene="uid://xby7pcjf4jgj"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/backstitch/plugin.cfg", "res://addons/curved_lines_2d/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

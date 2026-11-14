@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c0ecc4vlkctdp"]
+
+[node name="2_option" type="Node2D" unique_id=1806745027]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=638905917]
+
+[node name="Control" type="Control" parent="." unique_id=263639356]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control" unique_id=634094072]
+layout_mode = 0
+offset_left = -550.0
+offset_top = -97.0
+offset_right = -88.0
+offset_bottom = 84.0
+text = "opt b"
+
+[node name="Button2" type="Button" parent="Control" unique_id=2027487688]
+layout_mode = 0
+offset_left = 93.0
+offset_top = -97.0
+offset_right = 550.0
+offset_bottom = 83.0
+text = "opt a"
+
+[node name="Label" type="Label" parent="Control" unique_id=221200939]
+layout_mode = 0
+offset_left = -248.0
+offset_top = -285.0
+offset_right = 258.0
+offset_bottom = -114.0
+theme_override_font_sizes/font_size = 61
+text = "choose an option
+"
+horizontal_alignment = 1
