@@ -1,66 +1,272 @@
 [gd_scene format=3 uid="uid://bdfs0pb6o4i72"]
 
-[ext_resource type="Theme" uid="uid://cbkdf74317cso" path="res://new_theme.tres" id="1_baqto"]
-[ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/new_theme.tres" id="1_opfma"]
+[ext_resource type="Theme" uid="uid://bv3i0nkf0wxec" path="res://assets/2_options_button_hover.tres" id="1_opfma"]
 [ext_resource type="Texture2D" uid="uid://caxff6ywccegi" path="res://assets/2-option-buttons.svg" id="2_1x2k8"]
+[ext_resource type="Texture2D" uid="uid://cls0h8jvimdqk" path="res://assets/2-option-buttons-hover.svg" id="3_1x2k8"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n73l5"]
+[sub_resource type="SystemFont" id="SystemFont_t6fpj"]
+font_names = PackedStringArray("JetBrainsMono Nerd Font Mono")
+
+[sub_resource type="SystemFont" id="SystemFont_opfma"]
+font_names = PackedStringArray("JetBrainsMono Nerd Font Mono")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8bho8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
 texture = ExtResource("2_1x2k8")
-texture_margin_right = 3.4522736
-region_rect = Rect2(89.2442, 187.15385, 262.75598, 378.58112)
+region_rect = Rect2(79.99205, 177.72392, 281.02673, 398.25098)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y8r6o"]
-texture = ExtResource("2_1x2k8")
-region_rect = Rect2(90.3999, 191.09982, 260.69995, 373.89017)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yhqhh"]
+texture = ExtResource("3_1x2k8")
+region_rect = Rect2(77.94534, 177.02213, 285.0085, 400.92722)
 
-[node name="3_option" type="Node2D" unique_id=891577447]
-position = Vector2(26, 14)
+[node name="3_option" type="Node2D" unique_id=1806745027]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=346002944]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=638905917]
 
-[node name="Control" type="Control" parent="." unique_id=795916465]
+[node name="Control" type="Control" parent="." unique_id=263639356]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="Control" unique_id=1970635668]
-layout_mode = 0
-offset_left = -429.0
-offset_top = -12.0
-offset_right = -217.0
-offset_bottom = 275.0
-theme = ExtResource("1_opfma")
-theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
-text = "opt a"
-
-[node name="Button2" type="Button" parent="Control" unique_id=854132875]
-layout_mode = 0
-offset_left = 177.0
-offset_top = -14.0
-offset_right = 421.0
-offset_bottom = 102.0
-text = "opt b"
-
-[node name="Button3" type="Button" parent="Control" unique_id=262357077]
-physics_interpolation_mode = 1
-texture_filter = 1
-layout_mode = 0
-offset_left = -133.0
-offset_top = -10.0
-offset_right = 82.0
-offset_bottom = 275.0
-theme = ExtResource("1_baqto")
-theme_override_styles/normal = SubResource("StyleBoxTexture_y8r6o")
-text = "opt c"
-
-[node name="Label" type="Label" parent="Control" unique_id=1756482649]
-layout_mode = 0
-offset_left = -287.0
-offset_top = -182.0
-offset_right = 244.0
-offset_bottom = -94.0
-theme = ExtResource("1_baqto")
-theme_override_font_sizes/font_size = 64
-text = "option"
+[node name="Title" type="Label" parent="Control" unique_id=221200939]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.425
+anchor_bottom = 0.425
+offset_left = -300.0
+offset_top = -324.0
+offset_right = 302.0
+offset_bottom = -153.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 61
+text = "CHOOSE AN OPTION
+"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Control" unique_id=1626841865]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 31.036407
+anchor_top = 0.5004463
+anchor_right = 41.836407
+anchor_bottom = 0.5004463
+offset_left = -1758.4563
+offset_top = -245.01785
+offset_right = -1156.4563
+offset_bottom = -74.01785
+theme_override_fonts/font = SubResource("SystemFont_opfma")
+theme_override_font_sizes/font_size = 35
+text = "CHOOSE AN OPTION
+"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button1" type="Button" parent="Control" unique_id=1109146535]
+layout_mode = 0
+offset_left = -481.0
+offset_top = -166.0
+offset_right = -183.0
+offset_bottom = 282.0
+theme = ExtResource("1_opfma")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yhqhh")
+
+[node name="B2_Title" type="Label" parent="Control/Button1" unique_id=903104726]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.37919465
+anchor_top = -0.43670675
+anchor_right = 0.47734898
+anchor_bottom = -0.38802907
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Desc" type="Label" parent="Control/Button1" unique_id=1993805090]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0738255
+anchor_top = -0.31270292
+anchor_right = 0.17617449
+anchor_bottom = -0.29370287
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Stats" type="Label" parent="Control/Button1" unique_id=2129420410]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.25838926
+anchor_top = -0.3677686
+anchor_right = -0.008389262
+anchor_bottom = -0.33561984
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 594.6113
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="Control" unique_id=1775474476]
+layout_mode = 0
+offset_left = -149.0
+offset_top = -165.0
+offset_right = 149.0
+offset_bottom = 279.0
+theme = ExtResource("1_opfma")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yhqhh")
+
+[node name="B1_Title" type="Label" parent="Control/Button2" unique_id=2057624093]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.37919462
+anchor_top = -0.44380534
+anchor_right = 0.47734898
+anchor_bottom = -0.39512768
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Desc" type="Label" parent="Control/Button2" unique_id=653127611]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0738255
+anchor_top = -0.31654382
+anchor_right = 0.17617449
+anchor_bottom = -0.29754376
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Stats" type="Label" parent="Control/Button2" unique_id=2107963686]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.25838926
+anchor_top = -0.3677686
+anchor_right = -0.008389262
+anchor_bottom = -0.33561984
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="Control" unique_id=933877969]
+layout_mode = 0
+offset_left = 183.0
+offset_top = -165.0
+offset_right = 481.0
+offset_bottom = 279.0
+theme = ExtResource("1_opfma")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yhqhh")
+
+[node name="B3_Title" type="Label" parent="Control/Button3" unique_id=137880227]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.37919462
+anchor_top = -0.43704858
+anchor_right = 0.47734898
+anchor_bottom = -0.38837093
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B3_Desc" type="Label" parent="Control/Button3" unique_id=588678985]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0738255
+anchor_top = -0.31654382
+anchor_right = 0.17617449
+anchor_bottom = -0.29754376
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B3_Stats" type="Label" parent="Control/Button3" unique_id=129391702]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.25838926
+anchor_top = -0.3677686
+anchor_right = -0.008389262
+anchor_bottom = -0.33561984
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

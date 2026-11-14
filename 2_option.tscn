@@ -1,5 +1,24 @@
 [gd_scene format=3 uid="uid://c0ecc4vlkctdp"]
 
+[ext_resource type="Texture2D" uid="uid://cls0h8jvimdqk" path="res://assets/2-option-buttons-hover.svg" id="1_8mjou"]
+[ext_resource type="Theme" uid="uid://bv3i0nkf0wxec" path="res://assets/2_options_button_hover.tres" id="1_h11ru"]
+[ext_resource type="Texture2D" uid="uid://caxff6ywccegi" path="res://assets/2-option-buttons.svg" id="1_x7upv"]
+
+[sub_resource type="SystemFont" id="SystemFont_t6fpj"]
+font_names = PackedStringArray("JetBrainsMono Nerd Font Mono")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8bho8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("1_x7upv")
+region_rect = Rect2(79.99205, 177.72392, 281.02673, 398.25098)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yhqhh"]
+texture = ExtResource("1_8mjou")
+region_rect = Rect2(77.94534, 177.02213, 285.0085, 400.92722)
+
 [node name="2_option" type="Node2D" unique_id=1806745027]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=638905917]
@@ -9,30 +28,186 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="Control" unique_id=634094072]
-layout_mode = 0
-offset_left = -550.0
-offset_top = -97.0
-offset_right = -88.0
-offset_bottom = 84.0
-text = "opt b"
-
-[node name="Button2" type="Button" parent="Control" unique_id=2027487688]
-layout_mode = 0
-offset_left = 93.0
-offset_top = -97.0
-offset_right = 550.0
-offset_bottom = 83.0
-text = "opt a"
-
-[node name="Label" type="Label" parent="Control" unique_id=221200939]
-layout_mode = 0
-offset_left = -248.0
-offset_top = -285.0
-offset_right = 258.0
-offset_bottom = -114.0
+[node name="Title" type="Label" parent="Control" unique_id=221200939]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.425
+anchor_bottom = 0.425
+offset_left = -300.0
+offset_top = -324.0
+offset_right = 302.0
+offset_bottom = -153.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
 theme_override_font_sizes/font_size = 61
-text = "choose an option
+text = "CHOOSE AN OPTION
 "
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Control" unique_id=422261043]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -5.4
+anchor_top = 2.475
+anchor_right = 5.4
+anchor_bottom = 2.475
+offset_left = -300.0
+offset_top = -324.0
+offset_right = 302.0
+offset_bottom = -153.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 35
+text = "CHOOSE AN OPTION
+"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button1" type="Button" parent="Control" unique_id=1775474476]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.15
+anchor_top = 0.775
+anchor_right = 4.15
+anchor_bottom = 0.775
+offset_left = -149.0
+offset_top = -197.0
+offset_right = 149.0
+offset_bottom = 251.0
+theme = ExtResource("1_h11ru")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yhqhh")
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Title" type="Label" parent="Control/Button1" unique_id=2057624093]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.38255033
+anchor_top = -0.43224245
+anchor_right = 0.4807047
+anchor_bottom = -0.38356477
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Desc" type="Label" parent="Control/Button1" unique_id=653127611]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0738255
+anchor_top = -0.31270292
+anchor_right = 0.17617449
+anchor_bottom = -0.29370287
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Stats" type="Label" parent="Control/Button1" unique_id=2107963686]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.25838926
+anchor_top = -0.3677686
+anchor_right = -0.008389262
+anchor_bottom = -0.33561984
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="Control" unique_id=1109146535]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.775
+anchor_right = 0.025
+anchor_bottom = 0.775
+offset_left = -316.0
+offset_top = -197.0
+offset_right = -18.0
+offset_bottom = 251.0
+theme = ExtResource("1_h11ru")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yhqhh")
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Title" type="Label" parent="Control/Button2" unique_id=903104726]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.37919465
+anchor_top = -0.43224245
+anchor_right = 0.47734898
+anchor_bottom = -0.38356477
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Desc" type="Label" parent="Control/Button2" unique_id=1993805090]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0738255
+anchor_top = -0.31270292
+anchor_right = 0.17617449
+anchor_bottom = -0.29370287
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Stats" type="Label" parent="Control/Button2" unique_id=2129420410]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.25838926
+anchor_top = -0.3677686
+anchor_right = -0.008389262
+anchor_bottom = -0.33561984
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_t6fpj")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

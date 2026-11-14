@@ -1,0 +1,233 @@
+[
+  [
+    "Surface Imaging Camera",
+    {
+      "title": "HiRISE",
+      "desc": "Camera that views very small objects. Expensive, heavy, high energy usage; must shut down during dust storms to keep the battery alive.",
+      "stat": {
+        "cost": 80000000,
+        "pr": 3,
+        "int": -0.01
+      }
+    },
+    {
+      "title": "Context Camera",
+      "desc": "Provides a background view of Martian terrain. Expensive, very heavy, high energy usage; must shut down during dust storms to keep the battery alive.",
+      "stat": {
+        "cost": 50000000,
+        "pr": 1,
+        "int": -0.02
+      }
+    },
+    {
+      "title": "Mars Colour Imager",
+      "desc": "Produces a climate overview of Mars and spots weather problems, but suffers from low resolution.",
+      "stat": {
+        "cost": 20000000,
+        "pr": 1,
+        "int": 0.01
+      }
+    }
+  ],
+  [
+    "Atmospheric, Mineral & Subsurface Scanner",
+    {
+      "title": "CRISM Spectrometer",
+      "desc": "Searches for mineral residue. High energy usage; must shut down during dust storms to keep the battery alive.",
+      "stat": {
+        "cost": 17600000,
+        "pr": 1,
+        "int": 0
+      }
+    },
+    {
+      "title": "MCS",
+      "desc": "Measures temperature, humidity, and dust content, though it is vulnerable to radiation damage.",
+      "stat": {
+        "cost": 22000000,
+        "pr": -1,
+        "int": 0
+      }
+    },
+    {
+      "title": "SHARAD",
+      "desc": "Detects underground liquid and frozen substances. Support arms may jam when unfolded, hindering satellite balance.",
+      "stat": {
+        "cost": 30000000,
+        "pr": 1,
+        "int": -0.02
+      }
+    }
+  ],
+  [
+    "Navigation & Communications",
+    {
+      "title": "UHF Comms Package",
+      "desc": "Handles navigation and communications with Earth. Outdated hardware with low-PR images, though it offers broad visibility.",
+      "stat": {
+        "cost": 10000000,
+        "pr": -2,
+        "int": 0.02
+      }
+    },
+    {
+      "title": "Optical Nav Camera",
+      "desc": "Pinpoints spacecraft trajectory with high accuracy, but uses a fixed mount with no backups.",
+      "stat": {
+        "cost": 1000000,
+        "pr": 2,
+        "int": -0.015
+      }
+    },
+    {
+      "title": "Ka-band Telecom",
+      "desc": "Fast communications with Earth, though its thin beam is heavily absorbed by clouds.",
+      "stat": {
+        "cost": 5000000,
+        "pr": 1,
+        "int": -0.01
+      }
+    }
+  ],
+  [
+    "Propulsion & Launch Alternatives",
+    {
+      "title": "Solar Electric Propulsion",
+      "desc": "Uses ion thrusters with less mass, though it takes a longer route to Mars and increases mission time.",
+      "stat": {
+        "cost": 50000000,
+        "pr": 1,
+        "int": 0.01
+      }
+    },
+    {
+      "title": "Rideshare on Separate Mission",
+      "desc": "Attaches the orbiter to a separate Mars mission to save fuel. Faces strict weight/size limits and potential launch delays.",
+      "stat": {
+        "cost": 40000000,
+        "pr": -3,
+        "int": -0.01
+      }
+    },
+    {
+      "title": "Dedicated Chemical Propulsion",
+      "desc": "Provides direct, fast course corrections and controlled orbital insertion, but is expensive and very heavy.",
+      "stat": {
+        "cost": 90000000,
+        "pr": 4,
+        "int": 0.03
+      }
+    }
+  ],
+  [
+    "Radar Modifications",
+    {
+      "title": "Extra Testing and Backups",
+      "desc": "Adds redundancy and testing to prevent support arm jams, though it doubles the cost.",
+      "stat": {
+        "cost": 60000000,
+        "pr": 3,
+        "int": 0.03
+      }
+    },
+    {
+      "title": "Strip Out Backup Parts",
+      "desc": "Cuts costs by removing backup parts, resulting in a high chance of jams or component failure.",
+      "stat": {
+        "cost": 20000000,
+        "pr": -2,
+        "int": -0.03
+      }
+    },
+    {
+      "title": "Lighter Passive Sensor",
+      "desc": "Saves weight and money, but cannot see deep underground water.",
+      "stat": {
+        "cost": 20000000,
+        "pr": -2,
+        "int": -0.02
+      }
+    }
+  ],
+  [
+    "Power Generation",
+    {
+      "title": "Dust Clearing Solar Panels",
+      "desc": "Keeps power generation active during dust storms, though it is expensive and adds complexity.",
+      "stat": {
+        "cost": 40000000,
+        "pr": 2,
+        "int": 0.03
+      }
+    },
+    {
+      "title": "Aerogel Insulation",
+      "desc": "Uses low-temperature hardware with insulation so no heaters are required, reducing off-the-shelf instrument use.",
+      "stat": {
+        "cost": 3000000,
+        "pr": 1,
+        "int": -0.01
+      }
+    }
+  ],
+  [
+    "Data / Bandwidth",
+    {
+      "title": "AI Data Compression",
+      "desc": "Software compresses shots before sending to Earth to prevent data gridlock, carrying a risk of software bugs.",
+      "stat": {
+        "cost": 5000000,
+        "pr": -2,
+        "int": -0.02
+      }
+    },
+    {
+      "title": "Offload Earth Transmission",
+      "desc": "Relays data through an existing Mars orbiter, though bandwidth is heavily rationed.",
+      "stat": {
+        "cost": 30000000,
+        "pr": -1,
+        "int": 0.01
+      }
+    },
+    {
+      "title": "Dedicated Antenna",
+      "desc": "Focuses the signal, but is heavy, high-power, expensive, and must compete with other missions for Deep Space Network tracking time.",
+      "stat": {
+        "cost": 25000000,
+        "pr": 1,
+        "int": -0.01
+      }
+    }
+  ],
+  [
+    "Ares II Data Gathering",
+    {
+      "title": "Budget Weather Context Orbiter",
+      "desc": "Low resolution imagery that cannot identify safe landing zones.",
+      "stat": {
+        "cost": 30000000,
+        "pr": -1,
+        "int": -0.02
+      }
+    },
+    {
+      "title": "Multiple Mid-Tier Instruments",
+      "desc": "Uses multiple mid-tier instruments, but cannot spot dangerous rocks at landing sites.",
+      "stat": {
+        "cost": 150000000,
+        "pr": -5,
+        "int": -0.05
+      }
+    },
+    {
+      "title": "Relay Orbiter",
+      "desc": "Combines high-resolution imaging and relay comms to spot safe landing zones, though it is expensive and uses high power.",
+      "stat": {
+        "cost": 400000000,
+        "pr": 10,
+        "int": 0.1
+      }
+    }
+  ]
+]
