@@ -7,6 +7,7 @@ extends Camera2D
 @export var left_button: BaseButton
 @export var right_button: BaseButton
 
+
 func _ready():
 	var anim := get_node("Sprite2D/AnimationPlayer")
 	anim.queue_free()
