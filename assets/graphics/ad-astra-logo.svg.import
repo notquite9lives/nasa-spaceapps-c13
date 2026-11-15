@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db36pli5fab0d"
-path="res://.godot/imported/battery_inner.svg-7cd11721b4c9a89c41f7c29ddb439ae3.ctex"
+uid="uid://chaak71qqdxgo"
+path="res://.godot/imported/ad-astra-logo.svg-a11a4808c8231dac0023c57de62e8ec2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/battery_inner.svg"
-dest_files=["res://.godot/imported/battery_inner.svg-7cd11721b4c9a89c41f7c29ddb439ae3.ctex"]
+source_file="res://assets/graphics/ad-astra-logo.svg"
+dest_files=["res://.godot/imported/ad-astra-logo.svg-a11a4808c8231dac0023c57de62e8ec2.ctex"]
 
 [params]
 

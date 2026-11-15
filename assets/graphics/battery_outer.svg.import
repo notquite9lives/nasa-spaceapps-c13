@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cujvtier2cbio"
-path="res://.godot/imported/buttons_main_menu.svg-e9f4266e511952e10949e2a924b87d9c.ctex"
+uid="uid://dn0rsrgarb78d"
+path="res://.godot/imported/battery_outer.svg-aa60cae78c7dc46487311f93db11b1ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/buttons_main_menu.svg"
-dest_files=["res://.godot/imported/buttons_main_menu.svg-e9f4266e511952e10949e2a924b87d9c.ctex"]
+source_file="res://assets/graphics/battery_outer.svg"
+dest_files=["res://.godot/imported/battery_outer.svg-aa60cae78c7dc46487311f93db11b1ba.ctex"]
 
 [params]
 

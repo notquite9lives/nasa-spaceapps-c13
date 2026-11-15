@@ -2,8 +2,8 @@ extends Node2D
 
 @export var mission: int = 1
 @export var mission_1_json := "res://data/mission1.json"
-const OPTIONS_3: PackedScene = preload("res://3_option.tscn")
-const OPTIONS_2: PackedScene = preload("res://2_option.tscn")
+const OPTIONS_3: PackedScene = preload("res://scenes/3_option.tscn")
+const OPTIONS_2: PackedScene = preload("res://scenes/2_option.tscn")
 var tcount := 0
 var ccount := 0
 var data := []

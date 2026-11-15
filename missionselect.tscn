@@ -1,18 +1,15 @@
-[gd_scene format=3 uid="uid://bqfktaylaa175"]
+[gd_scene format=3 uid="uid://b3wk60mkv0rty"]
 
-[ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://background_animation.tscn" id="1_bpevx"]
-[ext_resource type="Script" uid="uid://dbjq3yeoulwrn" path="res://camera_2d.gd" id="1_e3drc"]
-[ext_resource type="Texture2D" uid="uid://bimprbdqha2fb" path="res://assets/planets_and_sun.svg" id="2_hs22p"]
-[ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/new_theme.tres" id="3_4wauv"]
-[ext_resource type="Texture2D" uid="uid://bd3f5wf6s6om8" path="res://assets/KEYBOARD/KEYS/X.png" id="4_53phv"]
+[ext_resource type="PackedScene" uid="uid://c053n45x7xkqk" path="res://background_animation.tscn" id="1_bpevx"]
+[ext_resource type="Script" path="res://camera_2d.gd" id="1_e3drc"]
+[ext_resource type="Texture2D" uid="uid://bimprbdqha2fb" path="res://assets/graphics/planets_and_sun.svg" id="2_hs22p"]
+[ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/graphics/new_theme.tres" id="3_4wauv"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n73l5"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_53phv"]
-texture = ExtResource("4_53phv")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1qcds"]
-texture = ExtResource("4_53phv")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e3drc"]
 
@@ -241,6 +238,7 @@ autoplay = &"slidingyay"
 layer = 100
 
 [node name="ColorRect" type="ColorRect" parent="transition" unique_id=1274038443]
+visible = false
 offset_left = -132.0
 offset_top = 117.0
 offset_right = -92.0

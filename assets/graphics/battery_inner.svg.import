@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biaxwktiqm484"
-path="res://.godot/imported/nuclear_fuel.svg-26da68074759cde4607a1d4a5dd15a14.ctex"
+uid="uid://db36pli5fab0d"
+path="res://.godot/imported/battery_inner.svg-30732cbb7109f012ba4a2e27f6a38006.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/nuclear_fuel.svg"
-dest_files=["res://.godot/imported/nuclear_fuel.svg-26da68074759cde4607a1d4a5dd15a14.ctex"]
+source_file="res://assets/graphics/battery_inner.svg"
+dest_files=["res://.godot/imported/battery_inner.svg-30732cbb7109f012ba4a2e27f6a38006.ctex"]
 
 [params]
 

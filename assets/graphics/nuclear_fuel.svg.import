@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chaak71qqdxgo"
-path="res://.godot/imported/ad-astra-logo.svg-8c3f579951897a95453cae2d77bbb9e9.ctex"
+uid="uid://biaxwktiqm484"
+path="res://.godot/imported/nuclear_fuel.svg-b8fe2b1c1abefac4ab58ca80199038a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ad-astra-logo.svg"
-dest_files=["res://.godot/imported/ad-astra-logo.svg-8c3f579951897a95453cae2d77bbb9e9.ctex"]
+source_file="res://assets/graphics/nuclear_fuel.svg"
+dest_files=["res://.godot/imported/nuclear_fuel.svg-b8fe2b1c1abefac4ab58ca80199038a9.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0d104fhe4wqu"
-path="res://.godot/imported/planets_and_sun.svg-10536f462c71e180b10b0e16194ef7ce.ctex"
+uid="uid://caxff6ywccegi"
+path="res://.godot/imported/2-option-buttons.svg-9406fbd949992b0da212213fd8f6b5a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Buttons/planets_and_sun.svg"
-dest_files=["res://.godot/imported/planets_and_sun.svg-10536f462c71e180b10b0e16194ef7ce.ctex"]
+source_file="res://assets/graphics/2-option-buttons.svg"
+dest_files=["res://.godot/imported/2-option-buttons.svg-9406fbd949992b0da212213fd8f6b5a4.ctex"]
 
 [params]
 
