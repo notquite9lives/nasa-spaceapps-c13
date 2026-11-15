@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c6s4bp312afqx" path="res://assets/graphics/2-option-buttons-red.svg" id="1_hrwfd"]
 [ext_resource type="Theme" uid="uid://bv3i0nkf0wxec" path="res://assets/graphics/2_options_button_hover.tres" id="1_uxd1m"]
 [ext_resource type="Texture2D" uid="uid://cbruewadegx6a" path="res://assets/graphics/2-option-buttons-hover-red.svg" id="2_uxd1m"]
+[ext_resource type="AudioStream" uid="uid://bi62lw7rgg1a0" path="res://assets/music/ad astra.wav" id="4_15nym"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mbxm6"]
 bg_color = Color(0.6, 0.08399999, 0.08399999, 1)
@@ -85,6 +86,24 @@ text = "CHOOSE AN OPTION
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="B1_Desc" type="Label" parent="Control" unique_id=1962562518]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.115771815
+anchor_top = -0.52347267
+anchor_right = 0.2181208
+anchor_bottom = -0.5044726
+offset_left = 194.13087
+offset_top = 29.723469
+offset_right = 352.1309
+offset_bottom = 63.723476
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
 [node name="Button1" type="Button" parent="Control" unique_id=792704503]
 layout_mode = 1
 anchors_preset = -1
@@ -119,31 +138,13 @@ horizontal_alignment = 1
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="B1_Desc" type="Label" parent="Control/Button1" unique_id=1962562518]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.115771815
-anchor_top = -0.52347267
-anchor_right = 0.2181208
-anchor_bottom = -0.5044726
-offset_left = 55.0
-offset_top = 263.0
-offset_right = 213.0
-offset_bottom = 297.0
-theme_override_fonts/font = SubResource("SystemFont_15nym")
-theme_override_font_sizes/font_size = 16
-text = "XXXXX DESCRIPTION"
-horizontal_alignment = 1
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
-
 [node name="B1_Stats" type="Label" parent="Control/Button1" unique_id=1449827987]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.25838926
-anchor_top = -0.77410865
-anchor_right = -0.008389262
-anchor_bottom = -0.7292671
+anchor_left = -2.7986577
+anchor_top = -1.0685714
+anchor_right = -2.5486577
+anchor_bottom = -1.0126858
 offset_left = 110.0
 offset_top = 455.0
 offset_right = 268.0
@@ -171,24 +172,6 @@ offset_bottom = 153.0
 theme = ExtResource("1_uxd1m")
 theme_override_styles/normal = SubResource("StyleBoxTexture_yhqhh")
 theme_override_styles/hover = SubResource("StyleBoxTexture_c608t")
-metadata/_edit_use_anchors_ = true
-
-[node name="B2_Title" type="Label" parent="Control/Button2" unique_id=117444085]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.37583897
-anchor_top = -0.5878469
-anchor_right = 0.4807047
-anchor_bottom = -0.5391692
-offset_left = 134.0
-offset_top = 220.0
-offset_right = 134.75
-offset_bottom = 236.44
-theme_override_fonts/font = SubResource("SystemFont_15nym")
-theme_override_font_sizes/font_size = 22
-text = "XXXX OPTION"
-horizontal_alignment = 1
-autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="B2_Desc" type="Label" parent="Control/Button2" unique_id=1687002857]
@@ -300,3 +283,23 @@ INTEGRITY: -X%
 "
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="B2_Title" type="Label" parent="." unique_id=117444085]
+anchors_preset = -1
+anchor_left = -0.37583897
+anchor_top = -0.5878469
+anchor_right = 0.4807047
+anchor_bottom = -0.5391692
+offset_left = -128.00002
+offset_top = -56.7464
+offset_right = -127.000015
+offset_bottom = 8.253601
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2104101580]
+stream = ExtResource("4_15nym")

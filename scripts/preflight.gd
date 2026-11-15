@@ -121,5 +121,6 @@ func spawn_buttons(data):
 		print("Choice made!")
 			
 		ccount += 1
-		
+	self.get_parent().get_node("Sprite2D")
+	get_tree().change_scene_to_file("res://scenes/earth-mars.tscn")
 	return [budget_spent, integrity_difference, pr_difference]
