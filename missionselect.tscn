@@ -1,0 +1,248 @@
+[gd_scene format=3 uid="uid://bqfktaylaa175"]
+
+[ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://background_animation.tscn" id="1_bpevx"]
+[ext_resource type="Script" uid="uid://dbjq3yeoulwrn" path="res://camera_2d.gd" id="1_e3drc"]
+[ext_resource type="Texture2D" uid="uid://bimprbdqha2fb" path="res://assets/planets_and_sun.svg" id="2_hs22p"]
+[ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/new_theme.tres" id="3_4wauv"]
+[ext_resource type="Texture2D" uid="uid://bd3f5wf6s6om8" path="res://assets/KEYBOARD/KEYS/X.png" id="4_53phv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n73l5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_53phv"]
+texture = ExtResource("4_53phv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1qcds"]
+texture = ExtResource("4_53phv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e3drc"]
+
+[sub_resource type="Animation" id="Animation_53phv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_e3drc"]
+resource_name = "slidingyay"
+length = 4.055
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.51, 4.055, 10),
+"transitions": PackedFloat32Array(0.20306307, 1, 0.24148393, 1),
+"update": 0,
+"values": [Vector2(0, 4), Vector2(-1210, 4), Vector2(-237, 4), Vector2(0, 4)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mu6a8"]
+_data = {
+&"RESET": SubResource("Animation_53phv"),
+&"slidingyay": SubResource("Animation_e3drc")
+}
+
+[node name="missionselect" type="Node2D" unique_id=643363071]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1846603279]
+script = ExtResource("1_e3drc")
+
+[node name="Sprite2D" parent="Camera2D" unique_id=733503893 instance=ExtResource("1_bpevx")]
+position = Vector2(0, 4)
+
+[node name="PlanetsAndSun" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=887048611]
+position = Vector2(-1220, 3.3333464)
+scale = Vector2(2.6766524, 2.3820078)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(6.442047, 9.663071, 393.93698, 397.2744)
+
+[node name="PlanetsAndSun2" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=933405749]
+position = Vector2(-544.99994, -10)
+scale = Vector2(1.2673613, 1.2673612)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(484, 149, 99, 96)
+
+[node name="Button" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun2" unique_id=550308193]
+offset_left = -40.76712
+offset_top = -35.506847
+offset_right = 38.136963
+offset_bottom = 36.82192
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_53phv")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun3" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=149414800]
+position = Vector2(-261.66666, -13.333333)
+scale = Vector2(1.1452763, 1.1452763)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(76, 456, 187, 187)
+
+[node name="Button2" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun3" unique_id=1362996964]
+offset_left = -80.03889
+offset_top = -84.40466
+offset_right = 78.58367
+offset_bottom = 77.1284
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun11" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=1468700632]
+position = Vector2(-261.66666, -13.333333)
+scale = Vector2(1.1452763, 1.1452763)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(76, 456, 187, 187)
+
+[node name="Button2" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun11" unique_id=1375706836]
+offset_left = 213.92218
+offset_top = -71.307396
+offset_right = 372.54474
+offset_bottom = 90.22567
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun4" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=1140201107]
+position = Vector2(428.89474, -117.45262)
+rotation = -0.9463295
+scale = Vector2(1.3434178, 1.3434176)
+texture = ExtResource("2_hs22p")
+offset = Vector2(-211.67343, -211.5801)
+region_enabled = true
+region_rect = Rect2(327, 443, 225, 199)
+
+[node name="Button3" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun4" unique_id=992870360]
+offset_left = -468.6559
+offset_top = -396.79208
+offset_right = -310.03336
+offset_bottom = -235.25903
+rotation = -0.62685114
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun5" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=1775503583]
+position = Vector2(393.3333, -9.999999)
+scale = Vector2(1.6666666, 1.6666666)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(588, 476, 144, 144)
+
+[node name="Button4" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun5" unique_id=91358530]
+offset_left = -260.0
+offset_top = -59.0
+offset_right = -142.37746
+offset_bottom = 44.0
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e3drc")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun6" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=2023479751]
+position = Vector2(1186.6666, -20)
+scale = Vector2(1.6666666, 1.6666666)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(26, 679, 707, 284)
+
+[node name="Button5" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun6" unique_id=1698210699]
+offset_left = -340.0
+offset_top = -127.0
+offset_right = -104.0
+offset_bottom = 124.0
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun6" unique_id=766946472]
+offset_left = -16.0
+offset_top = -107.0
+offset_right = 287.0
+offset_bottom = 144.0
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun7" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=290479507]
+position = Vector2(1989.9999, -68.333336)
+scale = Vector2(1.6666666, 1.6666666)
+texture = ExtResource("2_hs22p")
+offset = Vector2(64, 34)
+region_enabled = true
+region_rect = Rect2(45, 973, 225, 410)
+
+[node name="Button8" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun7" unique_id=74936393]
+offset_left = 223.0
+offset_top = -87.0
+offset_right = 526.0
+offset_bottom = 164.0
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun8" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=1885526387]
+position = Vector2(2635, -10)
+scale = Vector2(1.6666666, 1.6666666)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(409, 1083, 206, 205)
+
+[node name="Button7" type="Button" parent="Camera2D/Sprite2D/PlanetsAndSun8" unique_id=2058540369]
+offset_left = -475.0
+offset_top = -126.0
+offset_right = -172.0
+offset_bottom = 125.0
+theme = ExtResource("3_4wauv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n73l5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1qcds")
+metadata/_edit_use_anchors_ = true
+
+[node name="PlanetsAndSun9" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=1339861524]
+position = Vector2(423.33328, 148.33333)
+scale = Vector2(1.0833334, 1.0833333)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(672, 399, 63, 60)
+
+[node name="PlanetsAndSun10" type="Sprite2D" parent="Camera2D/Sprite2D" unique_id=417029503]
+position = Vector2(282.91663, -160.157)
+scale = Vector2(0.7535461, 0.67709947)
+texture = ExtResource("2_hs22p")
+region_enabled = true
+region_rect = Rect2(657, 275, 94, 94)
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Camera2D" unique_id=1970393326]
+root_node = NodePath("../Sprite2D")
+libraries/ = SubResource("AnimationLibrary_mu6a8")
+autoplay = &"slidingyay"
+
+[node name="transition" type="CanvasLayer" parent="." unique_id=1529244606]
+layer = 100
+
+[node name="ColorRect" type="ColorRect" parent="transition" unique_id=1274038443]
+offset_left = -132.0
+offset_top = 117.0
+offset_right = -92.0
+offset_bottom = 157.0
+mouse_filter = 2
