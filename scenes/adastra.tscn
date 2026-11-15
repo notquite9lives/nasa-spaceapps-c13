@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://dohjgq1ll5xcu" path="res://scenes/ad_logo.tscn" id="1_keybg"]
 [ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/graphics/new_theme.tres" id="1_r8b6n"]
-[ext_resource type="Script" uid="uid://pryrka0m8iet" path="res://scripts/quit.gd" id="1_s3ci6"]
+[ext_resource type="Script" uid="uid://pryrka0m8iet" path="res://scenes/quit.gd" id="1_s3ci6"]
 [ext_resource type="Texture2D" uid="uid://cujvtier2cbio" path="res://assets/graphics/buttons_main_menu.svg" id="2_j20bd"]
 [ext_resource type="Texture2D" uid="uid://d0nctwx00aces" path="res://assets/graphics/buttons_main_menu_hover.svg" id="3_opm6b"]
-[ext_resource type="Script" uid="uid://bonnop54vuk48" path="res://scripts/newgame.gd" id="6_keybg"]
+[ext_resource type="Script" uid="uid://bonnop54vuk48" path="res://scenes/newgame.gd" id="6_keybg"]
 [ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://scenes/background_animation.tscn" id="10_wlam2"]
 
 [sub_resource type="GDScript" id="GDScript_2i68v"]
