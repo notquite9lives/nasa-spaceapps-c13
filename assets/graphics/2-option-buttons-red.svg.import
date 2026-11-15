@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2x3frbxtfvs2"
-path="res://.godot/imported/2-option-buttons-hover-red(1).svg-55c4488b2337985310322ddddc65bfff.ctex"
+uid="uid://c6s4bp312afqx"
+path="res://.godot/imported/2-option-buttons-red.svg-cb45a0fb7c2af20742028bac00247553.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/2-option-buttons-hover-red(1).svg"
-dest_files=["res://.godot/imported/2-option-buttons-hover-red(1).svg-55c4488b2337985310322ddddc65bfff.ctex"]
+source_file="res://assets/graphics/2-option-buttons-red.svg"
+dest_files=["res://.godot/imported/2-option-buttons-red.svg-cb45a0fb7c2af20742028bac00247553.ctex"]
 
 [params]
 

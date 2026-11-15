@@ -25,7 +25,7 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="0.84671098"
-     inkscape:cx="392.69598"
+     inkscape:cx="392.10546"
      inkscape:cy="525.56304"
      inkscape:window-width="1670"
      inkscape:window-height="910"
@@ -35,18 +35,6 @@
      inkscape:current-layer="svg1" />
   <defs
      id="defs1">
-    <linearGradient
-       id="linearGradient4"
-       inkscape:collect="always">
-      <stop
-         style="stop-color:#837676;stop-opacity:1;"
-         offset="0.19038403"
-         id="stop3" />
-      <stop
-         style="stop-color:#ffbebe;stop-opacity:0.93158609;"
-         offset="1"
-         id="stop4" />
-    </linearGradient>
     <linearGradient
        id="linearGradient1"
        inkscape:collect="always">
@@ -69,16 +57,6 @@
        y2="136.6945"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-17.827393,0.10293647)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4"
-       id="linearGradient3"
-       gradientUnits="userSpaceOnUse"
-       x1="76.193542"
-       y1="62.539482"
-       x2="76.193542"
-       y2="136.6945"
-       gradientTransform="translate(61.619303,0.10294259)" />
   </defs>
   <rect
      style="fill:url(#linearGradient2);stroke:#ffffff;stroke-width:3;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:2.3;stroke-dasharray:none;opacity:0.85"
@@ -86,12 +64,5 @@
      width="72.155006"
      height="102.84782"
      x="22.288651"
-     y="48.296028" />
-  <rect
-     style="fill:url(#linearGradient3);fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:2.3;stroke-dasharray:none"
-     id="rect1-5"
-     width="72.155006"
-     height="102.84782"
-     x="101.73531"
      y="48.296028" />
 </svg>

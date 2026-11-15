@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dl6nikecku8k8"]
+
+[ext_resource type="Texture2D" uid="uid://c6s4bp312afqx" path="res://assets/graphics/2-option-buttons-red.svg" id="1_hrwfd"]
+[ext_resource type="Texture2D" uid="uid://cbruewadegx6a" path="res://assets/graphics/2-option-buttons-hover-red.svg" id="2_uxd1m"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8bho8"]
+texture = ExtResource("1_hrwfd")
+region_rect = Rect2(80, 178, 281, 398)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mbxm6"]
+texture = ExtResource("2_uxd1m")
+region_rect = Rect2(78, 177, 285, 401)
+
+[node name="Alert" type="Node2D" unique_id=666414214]
+
+[node name="Button" type="Button" parent="." unique_id=906067650]
+offset_left = -8.0
+offset_top = -4.0
+offset_right = -1.0
+offset_bottom = 5.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_mbxm6")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=169000018]
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
