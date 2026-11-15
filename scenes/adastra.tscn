@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://dohjgq1ll5xcu" path="res://scenes/ad_logo.tscn" id="1_keybg"]
 [ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/graphics/new_theme.tres" id="1_r8b6n"]
-[ext_resource type="Script" uid="uid://pryrka0m8iet" path="res://scripts/quit.gd" id="1_s3ci6"]
+[ext_resource type="Script" uid="uid://pryrka0m8iet" path="res://scenes/quit.gd" id="1_s3ci6"]
 [ext_resource type="Texture2D" uid="uid://cujvtier2cbio" path="res://assets/graphics/buttons_main_menu.svg" id="2_j20bd"]
 [ext_resource type="Texture2D" uid="uid://d0nctwx00aces" path="res://assets/graphics/buttons_main_menu_hover.svg" id="3_opm6b"]
-[ext_resource type="Script" uid="uid://bonnop54vuk48" path="res://scripts/newgame.gd" id="6_keybg"]
-[ext_resource type="AudioStream" uid="uid://jjpwa1jcor5j" path="res://assets/music/ante ascentium.wav" id="8_827rg"]
+[ext_resource type="Script" uid="uid://bonnop54vuk48" path="res://scenes/newgame.gd" id="6_keybg"]
 [ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://scenes/background_animation.tscn" id="10_wlam2"]
+[ext_resource type="Script" uid="uid://bax7hx12t20kk" path="res://scenes/credits_button.gd" id="11_credit"]
 
 [sub_resource type="GDScript" id="GDScript_2i68v"]
 script/source = "extends Control
@@ -163,6 +163,7 @@ theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxTexture_1g61b")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_7n0u3")
 theme_override_styles/hover = SubResource("StyleBoxTexture_7qrl4")
+script = ExtResource("11_credit")
 metadata/_edit_use_anchors_ = true
 
 [node name="quit" type="Button" parent="Control" unique_id=44750637]
@@ -185,9 +186,6 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" parent="." unique_id=733503893 instance=ExtResource("10_wlam2")]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1451625740]
-stream = ExtResource("8_827rg")
-volume_db = -2.364
-
 [connection signal="pressed" from="Control/play" to="Control/play" method="_on_pressed"]
+[connection signal="pressed" from="Control/credits" to="Control/credits" method="_on_pressed"]
 [connection signal="pressed" from="Control/quit" to="Control/quit" method="_on_pressed"]

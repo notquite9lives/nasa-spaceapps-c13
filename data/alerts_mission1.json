@@ -1,0 +1,302 @@
+[
+  [
+    "Aerobraking Dust Storm Overheat",
+    {
+      "title": "Execute Emergency Thruster Burn",
+      "desc": "Spend $20M in propellant reserves to raise the orbital periapsis immediately, guaranteeing spacecraft safety.",
+      "stat": {
+        "cost": 20000000,
+        "pr": 3,
+        "int": 2
+      }
+    },
+    {
+      "title": "Power Down & Ride It Out",
+      "desc": "Shut down all non-essential science instruments and tuck solar arrays to survive the thermal spike.",
+      "stat": {
+        "cost": 0,
+        "pr": 2,
+        "int": -2
+      }
+    },
+    {
+      "title": "Push Through for Atmospheric Data",
+      "desc": "Keep sensors active inside the storm to gather rare upper-atmosphere telemetry for future landers.",
+      "stat": {
+        "cost": 0,
+        "pr": 5,
+        "int": -4
+      }
+    }
+  ],
+  [
+    "SHARAD Radar Boom Jam",
+    {
+      "title": "Rapid Thruster Pulse Sequence",
+      "desc": "Fire high-impulse attitude thrusters to shake the hinge loose without draining extra funds.",
+      "stat": {
+        "cost": 0,
+        "pr": 4,
+        "int": -3
+      }
+    },
+    {
+      "title": "Dedicated Deep Space Network (DSN) Diagnostic",
+      "desc": "Lease emergency DSN tracking time for $25M to run slow thermal-cycling maneuvers that safely free the boom.",
+      "stat": {
+        "cost": 25000000,
+        "pr": 3,
+        "int": 2
+      }
+    },
+    {
+      "title": "Jettison & Recalibrate",
+      "desc": "Detach the jammed radar boom and rebalance the orbiter around its remaining cameras.",
+      "stat": {
+        "cost": 0,
+        "pr": 2,
+        "int": -1
+      }
+    }
+  ],
+  [
+    "X-Band / HiRISE Data Gridlock",
+    {
+      "title": "Emergency Software Compression Patch",
+      "desc": "Upload an experimental AI compression patch for $10M to shrink image files before transmission.",
+      "stat": {
+        "cost": 10000000,
+        "pr": 3,
+        "int": -1
+      }
+    },
+    {
+      "title": "Relay Through Legacy Orbiters",
+      "desc": "Pay $45M in inter-agency bandwidth fees to offload image queues to older Mars orbiters.",
+      "stat": {
+        "cost": 45000000,
+        "pr": 4,
+        "int": 1
+      }
+    },
+    {
+      "title": "Purge Low-Priority Telemetry",
+      "desc": "Delete background weather and engineering logs to free up drive space for flagship surface photos.",
+      "stat": {
+        "cost": 0,
+        "pr": 5,
+        "int": -2
+      }
+    }
+  ],
+  [
+    "Mars Climate Sounder Radiation Glitch",
+    {
+      "title": "Full Avionics Reboot",
+      "desc": "Power-cycle the instrument bus, risking a permanent hardware lockup on a vulnerable sensor.",
+      "stat": {
+        "cost": 0,
+        "pr": 3,
+        "int": -2
+      }
+    },
+    {
+      "title": "Ground-Team Software Recalibration",
+      "desc": "Spend $15M on flight-software engineers to write a dead-pixel filter around the damaged sensor.",
+      "stat": {
+        "cost": 15000000,
+        "pr": 3,
+        "int": 1
+      }
+    },
+    {
+      "title": "Gemini-Assisted AI Reconstruction",
+      "desc": "Run the damaged sensor's raw counts through a Gemini-derived vision model on the ground, rebuilding usable climate data from surrounding pixels at minimal cost.",
+      "stat": {
+        "cost": 5000000,
+        "pr": 2,
+        "int": 1
+      }
+    }
+  ],
+  [
+    "Dust Storm Solar Power Blackout",
+    {
+      "title": "Emergency Instrument Shutdown",
+      "desc": "Cut power to high-draw cameras like HiRISE and CRISM to keep thermal heaters and radios alive.",
+      "stat": {
+        "cost": 0,
+        "pr": 2,
+        "int": 1
+      }
+    },
+    {
+      "title": "Overdrive Heaters on Reserve Batteries",
+      "desc": "Keep science cameras warm for immediate post-storm imaging at the risk of deep battery degradation.",
+      "stat": {
+        "cost": 0,
+        "pr": 4,
+        "int": 2
+      }
+    },
+    {
+      "title": "Reroute Ka-Band Transmitter Power",
+      "desc": "Throttle communications down to bare-minimum telemetry while leasing $15M in high-sensitivity Earth receiving dishes.",
+      "stat": {
+        "cost": 15000000,
+        "pr": 3,
+        "int": 1
+      }
+    }
+  ],
+  [
+    "Cargo Entry Parachute Tear",
+    {
+      "title": "Maximum Retropropulsion Burn",
+      "desc": "Fire landing thrusters early at 100% thrust, burning through reserve fuel and kicking up heavy surface debris.",
+      "stat": {
+        "cost": 0,
+        "pr": 5,
+        "int": -2
+      }
+    },
+    {
+      "title": "Jettison Secondary Science Cargo",
+      "desc": "Dump non-essential rover hardware mid-air to lighten the lander for a safe touchdown.",
+      "stat": {
+        "cost": 40000000,
+        "pr": 3,
+        "int": 2
+      }
+    },
+    {
+      "title": "Automated Diversion to Flat Plains",
+      "desc": "Redirect the lander away from the rocky target zone toward safer terrain, requiring a $40M rover recovery plan later.",
+      "stat": {
+        "cost": 40000000,
+        "pr": 4,
+        "int": 1
+      }
+    }
+  ],
+  [
+    "Pre-Supply Cryocooler Failure",
+    {
+      "title": "Deploy Maintenance Rovers for Hard Reset",
+      "desc": "Command surface rovers to physically inspect and reconnect external power lines to backup coolers.",
+      "stat": {
+        "cost": 0,
+        "pr": 4,
+        "int": -2
+      }
+    },
+    {
+      "title": "Launch Emergency Top-Off Tanker",
+      "desc": "Fast-track a $150M mini-tanker on the next available launch window to replenish lost fuel.",
+      "stat": {
+        "cost": 150000000,
+        "pr": 5,
+        "int": 3
+      }
+    },
+    {
+      "title": "Throttle Down ISRU Production",
+      "desc": "Reduce fuel plant output to preserve remaining propellant, forcing a leaner ascent margin later.",
+      "stat": {
+        "cost": 0,
+        "pr": 2,
+        "int": -4
+      }
+    }
+  ],
+  [
+    "Surface Navigation Beacon Blackout",
+    {
+      "title": "Rely on Orbital Map Matching (TRN)",
+      "desc": "Switch incoming landers to autonomous Terrain Relative Navigation using orbital photos.",
+      "stat": {
+        "cost": 0,
+        "pr": 4,
+        "int": -3
+      }
+    },
+    {
+      "title": "Dispatch Rover to Clear & Reboot Beacon",
+      "desc": "Send an autonomous rover across rough terrain to brush off solar arrays and jumpstart the beacon.",
+      "stat": {
+        "cost": 0,
+        "pr": 5,
+        "int": -1
+      }
+    },
+    {
+      "title": "Upload High-Priority Orbital Scans",
+      "desc": "Spend $30M on dedicated orbiter imaging passes to build a 5-cm hazard map of the landing zone.",
+      "stat": {
+        "cost": 30000000,
+        "pr": 4,
+        "int": 2
+      }
+    }
+  ],
+  [
+    "ISRU Fuel Plant Valve Jam",
+    {
+      "title": "High-Pressure Backflush",
+      "desc": "Cycle the compressor in reverse to blow dust out of the valve, risking a seal rupture.",
+      "stat": {
+        "cost": 0,
+        "pr": 4,
+        "int": -2
+      }
+    },
+    {
+      "title": "Switch to Backup Atmospheric Intake",
+      "desc": "Reroute CO2 collection through secondary filters at half production speed.",
+      "stat": {
+        "cost": 0,
+        "pr": 3,
+        "int": 1
+      }
+    },
+    {
+      "title": "Ship Replacement Valve with Crew",
+      "desc": "Pack a $30M spare valve assembly onto the crew lander for a Day-1 EVA repair.",
+      "stat": {
+        "cost": 30000000,
+        "pr": 4,
+        "int": 1
+      }
+    }
+  ],
+  [
+    "Inflatable Habitat Deployment Stall",
+    {
+      "title": "Over-Pressurize Air Tanks",
+      "desc": "Pump reserve nitrogen into the module to force the layers apart, straining the pressure seals.",
+      "stat": {
+        "cost": 0,
+        "pr": 5,
+        "int": -1
+      }
+    },
+    {
+      "title": "Thermal Cycling & Slow Inflation",
+      "desc": "Rotate the ship to let solar heat soften the polymer foam over several hours while mission control monitors telemetry.",
+      "stat": {
+        "cost": 0,
+        "pr": 4,
+        "int": 2
+      }
+    },
+    {
+      "title": "Manual Astronaut EVA Inspection",
+      "desc": "Send crew members outside to manually inspect and free the jammed folds.",
+      "stat": {
+        "cost": 0,
+        "pr": 7,
+        "int": -2
+      }
+    }
+  ]
+]

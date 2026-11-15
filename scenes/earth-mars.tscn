@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://c7mpgk7ny24p5"]
+[gd_scene format=3 uid="uid://dywojsl1b4c3d"]
 
 [ext_resource type="Texture2D" uid="uid://bimprbdqha2fb" path="res://assets/graphics/planets_and_sun.svg" id="1_kmf8e"]
 [ext_resource type="Texture2D" uid="uid://6r5b402mcxv6" path="res://assets/graphics/satellite.svg" id="2_ht7ho"]
-[ext_resource type="Script" path="res://scenes/rah.gd" id="2_n67f5"]
-[ext_resource type="Script" path="res://scenes/mv.gd" id="3_fm8yr"]
+[ext_resource type="Script" uid="uid://b1srmq0pmd0qn" path="res://scenes/rah.gd" id="2_n67f5"]
+[ext_resource type="Script" uid="uid://dvvobtj1gn8kb" path="res://scenes/mv.gd" id="3_fm8yr"]
 [ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://scenes/background_animation.tscn" id="3_q533t"]
-[ext_resource type="Script" path="res://scenes/kill_anim.gd" id="4_wbi1r"]
-[ext_resource type="Script" path="res://scenes/camera-a1.gd" id="5_wbi1r"]
+[ext_resource type="Script" uid="uid://cnfir4s3m257e" path="res://scenes/kill_anim.gd" id="4_wbi1r"]
+[ext_resource type="Script" uid="uid://pw8hd15o00pb" path="res://scenes/camera-a1.gd" id="5_wbi1r"]
 [ext_resource type="Script" path="res://scenes/phobos_orbit.gd" id="6_phobos"]
-[ext_resource type="AudioStream" uid="uid://bi62lw7rgg1a0" path="res://assets/music/ad astra.wav" id="9_dswqd"]
-
+[ext_resource type="Script" uid="uid://crpc8asydt0or" path="res://scenes/day_counter.gd" id="7_day"]
+[ext_resource type="PackedScene" uid="uid://dtiialbxxt2ce" path="res://scenes/AlertManager.tscn" id="8_alert"]
 [node name="Node2D" type="Node2D" unique_id=824097283]
 position = Vector2(576, 324)
 
@@ -66,6 +66,7 @@ script = ExtResource("3_fm8yr")
 script = ExtResource("4_wbi1r")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1133850361]
+position = Vector2(2299, 0)
 script = ExtResource("5_wbi1r")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Camera2D" unique_id=1635653260]
@@ -78,6 +79,8 @@ text = "December 31, 2030
 Mission Day 0"
 autowrap_mode = 0
 horizontal_alignment = 2
+script = ExtResource("7_day")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1451592618]
-stream = ExtResource("9_dswqd")
+[node name="AlertManager" parent="." unique_id=900000005 instance=ExtResource("8_alert")]
+
+

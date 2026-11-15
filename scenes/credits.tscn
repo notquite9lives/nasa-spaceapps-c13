@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bw4jqfp78d441"]
+
+[ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://scenes/background_animation.tscn" id="1_bg"]
+[ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/graphics/new_theme.tres" id="2_theme"]
+[ext_resource type="Script" uid="uid://cqss1nltypox5" path="res://scenes/credits_back.gd" id="3_back"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.03, 0.055, 0.11, 0.78)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.28, 0.88, 0.92, 0.55)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="credits" type="Node2D" unique_id=2005692000]
+
+[node name="Sprite2D" parent="." unique_id=1190407050 instance=ExtResource("1_bg")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=223493590]
+
+[node name="UI" type="Control" parent="." unique_id=1939697755]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+
+[node name="Panel" type="Panel" parent="UI" unique_id=1833406549]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -220.0
+offset_right = 300.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Title" type="Label" parent="UI/Panel" unique_id=688553331]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 24.0
+offset_bottom = 72.0
+grow_horizontal = 2
+theme = ExtResource("2_theme")
+theme_override_font_sizes/font_size = 36
+text = "Credits"
+horizontal_alignment = 1
+
+[node name="Body" type="Label" parent="UI/Panel" unique_id=1508536568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 88.0
+offset_right = -32.0
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+theme_override_font_sizes/font_size = 22
+text = "NASA Space Apps Challenge - Ad Astra
+
+Thank you for playing!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Back" type="Button" parent="UI/Panel" unique_id=960277194]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -64.0
+offset_right = 70.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_theme")
+text = "Back"
+script = ExtResource("3_back")
+
+[connection signal="pressed" from="UI/Panel/Back" to="UI/Panel/Back" method="_on_pressed"]

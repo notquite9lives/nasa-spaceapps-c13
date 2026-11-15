@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://duhvnco8xy0to"]
+
+[ext_resource type="Texture2D" uid="uid://bimprbdqha2fb" path="res://assets/graphics/planets_and_sun.svg" id="1_planets"]
+[ext_resource type="Texture2D" uid="uid://6r5b402mcxv6" path="res://assets/graphics/satellite.svg" id="2_sat"]
+[ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://scenes/background_animation.tscn" id="3_bg"]
+[ext_resource type="Script" uid="uid://ck80xep8oaswk" path="res://scripts/mars_orbit.gd" id="4_orbit"]
+[ext_resource type="Script" uid="uid://cnfir4s3m257e" path="res://scenes/kill_anim.gd" id="5_kill"]
+[ext_resource type="Script" uid="uid://b2fw8m4w45kyv" path="res://scenes/orbit_day_counter.gd" id="6_day"]
+[ext_resource type="PackedScene" uid="uid://dtiialbxxt2ce" path="res://scenes/AlertManager.tscn" id="7_alert"]
+
+[node name="MarsOrbit" type="Node2D" unique_id=459674646]
+script = ExtResource("4_orbit")
+
+[node name="Background" parent="." unique_id=1729102260 instance=ExtResource("3_bg")]
+script = ExtResource("5_kill")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1189906389]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D" unique_id=1635653261]
+z_index = 10
+offset_left = 155.0
+offset_top = -321.0
+offset_right = 568.0
+offset_bottom = -219.0
+theme_override_font_sizes/normal_font_size = 35
+text = "Mission Day 0"
+autowrap_mode = 0
+horizontal_alignment = 2
+script = ExtResource("6_day")
+
+[node name="WinLabel" type="Label" parent="Camera2D" unique_id=1635653262]
+visible = false
+z_index = 10
+offset_left = -300.0
+offset_top = -80.0
+offset_right = 300.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 96
+text = "YOU WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mars" type="Sprite2D" parent="." unique_id=1264531851]
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("1_planets")
+region_enabled = true
+region_rect = Rect2(588, 476, 144, 144)
+
+[node name="PhobosPivot" type="Node2D" parent="Mars" unique_id=900000001]
+
+[node name="Phobos" type="Sprite2D" parent="Mars/PhobosPivot" unique_id=813045068]
+position = Vector2(-32, -105.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_planets")
+region_enabled = true
+region_rect = Rect2(657, 275, 94, 94)
+
+[node name="DeimosPivot" type="Node2D" parent="Mars" unique_id=900000002]
+
+[node name="Deimos" type="Sprite2D" parent="Mars/DeimosPivot" unique_id=1197405289]
+position = Vector2(-50, 109)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_planets")
+region_enabled = true
+region_rect = Rect2(672, 399, 63, 60)
+
+[node name="OrbitPivot" type="Node2D" parent="." unique_id=1143135436]
+
+[node name="Ares1" type="Sprite2D" parent="OrbitPivot" unique_id=1682282503]
+position = Vector2(220, 0)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("2_sat")
+region_enabled = true
+region_rect = Rect2(202, 430, 393, 263)
+
+[node name="AlertManager" parent="." unique_id=900000006 instance=ExtResource("7_alert")]
