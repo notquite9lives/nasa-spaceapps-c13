@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+.backstich/backstich.log
