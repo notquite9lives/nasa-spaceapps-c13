@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://preflight.tscn")
+	get_tree().change_scene_to_file("res://scenes/missionselect.tscn")

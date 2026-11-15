@@ -1,3 +1,4 @@
+class_name MainMenu
 extends Control
 
 
@@ -36,6 +37,6 @@ func _float_panel() -> void:
 	tween.tween_property(_panel, "modulate:a", 0.92, 2.4).set_trans(Tween.TRANS_SINE)
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/missionselect.tscn")
+	get_tree().change_scene_to_file("res://missionselect.tscn")
 	
 	
