@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://c0ecc4vlkctdp"]
 
-[ext_resource type="Texture2D" uid="uid://cls0h8jvimdqk" path="res://assets/2-option-buttons-hover.svg" id="1_8mjou"]
-[ext_resource type="Theme" uid="uid://bv3i0nkf0wxec" path="res://assets/2_options_button_hover.tres" id="1_h11ru"]
-[ext_resource type="Texture2D" uid="uid://caxff6ywccegi" path="res://assets/2-option-buttons.svg" id="1_x7upv"]
+[ext_resource type="Texture2D" uid="uid://cls0h8jvimdqk" path="res://assets/graphics/2-option-buttons-hover.svg" id="1_8mjou"]
+[ext_resource type="Theme" uid="uid://bv3i0nkf0wxec" path="res://assets/graphics/2_options_button_hover.tres" id="1_h11ru"]
+[ext_resource type="Texture2D" uid="uid://caxff6ywccegi" path="res://assets/graphics/2-option-buttons.svg" id="1_x7upv"]
 
 [sub_resource type="SystemFont" id="SystemFont_t6fpj"]
 font_names = PackedStringArray("JetBrainsMono Nerd Font Mono")
+subpixel_positioning = 0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8bho8"]
 content_margin_left = 0.0
@@ -103,9 +104,9 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.0738255
-anchor_top = -0.31270292
+anchor_top = -0.33948866
 anchor_right = 0.17617449
-anchor_bottom = -0.29370287
+anchor_bottom = -0.3204886
 offset_left = 55.0
 offset_top = 263.0
 offset_right = 213.0
@@ -114,7 +115,6 @@ theme_override_fonts/font = SubResource("SystemFont_t6fpj")
 theme_override_font_sizes/font_size = 16
 text = "XXXXX DESCRIPTION"
 horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
@@ -177,9 +177,9 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.0738255
-anchor_top = -0.31270292
+anchor_top = -0.33948866
 anchor_right = 0.17617449
-anchor_bottom = -0.29370287
+anchor_bottom = -0.3204886
 offset_left = 55.0
 offset_top = 263.0
 offset_right = 213.0
@@ -188,7 +188,6 @@ theme_override_fonts/font = SubResource("SystemFont_t6fpj")
 theme_override_font_sizes/font_size = 16
 text = "XXXXX DESCRIPTION"
 horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 

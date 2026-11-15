@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dtiialbxxt2ce"]
+
+[ext_resource type="Script" uid="uid://rudrb5hlr3no" path="res://scripts/alert_manager.gd" id="1_w38bp"]
+
+[node name="AlertManager" type="Node" unique_id=1108338827]
+script = ExtResource("1_w38bp")
+alerts_json_mission_1 = "res://data/mission1.json"
+
+[node name="AlertTimer" type="Timer" parent="." unique_id=8103921]

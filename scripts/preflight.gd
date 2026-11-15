@@ -38,12 +38,8 @@ func _ready() -> void:
 	match mission:
 		1:
 			data = get_data_from_json(mission_1_json)
-			spawn_buttons(data)
-		2, 3:
-			pass
-		_:
-			pass
-	
+			var result = await spawn_buttons(data)
+			
 
 func get_data_from_json(path):
 	if not FileAccess.file_exists(path):
@@ -126,4 +122,4 @@ func spawn_buttons(data):
 			
 		ccount += 1
 		
-	print("Budget spent: %d, PR difference: %d, Integrity Difference: %.2f" % [budget_spent, pr_difference, integrity_difference])
+	return [budget_spent, integrity_difference, pr_difference]

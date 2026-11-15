@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b2iejtqqg5iak"]
 
-[ext_resource type="Script" uid="uid://b0isywe65o2g7" path="res://scripts/preflight.gd" id="1_h0cno"]
+[ext_resource type="Script" uid="uid://bc2ciwpqy20ig" path="res://scripts/preflight.gd" id="1_h0cno"]
 
 [node name="Preflight" type="Node2D" unique_id=1598688450]
 script = ExtResource("1_h0cno")

@@ -1,28 +1,302 @@
 [gd_scene format=3 uid="uid://dl6nikecku8k8"]
 
 [ext_resource type="Texture2D" uid="uid://c6s4bp312afqx" path="res://assets/graphics/2-option-buttons-red.svg" id="1_hrwfd"]
+[ext_resource type="Theme" uid="uid://bv3i0nkf0wxec" path="res://assets/graphics/2_options_button_hover.tres" id="1_uxd1m"]
 [ext_resource type="Texture2D" uid="uid://cbruewadegx6a" path="res://assets/graphics/2-option-buttons-hover-red.svg" id="2_uxd1m"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8bho8"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mbxm6"]
+bg_color = Color(0.6, 0.08399999, 0.08399999, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_15nym"]
+font_names = PackedStringArray("JetBrainsMono Nerd Font Mono")
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yhqhh"]
 texture = ExtResource("1_hrwfd")
 region_rect = Rect2(80, 178, 281, 398)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mbxm6"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c608t"]
 texture = ExtResource("2_uxd1m")
 region_rect = Rect2(78, 177, 285, 401)
 
 [node name="Alert" type="Node2D" unique_id=666414214]
 
-[node name="Button" type="Button" parent="." unique_id=906067650]
-offset_left = -8.0
-offset_top = -4.0
-offset_right = -1.0
-offset_bottom = 5.0
-theme_override_styles/normal = SubResource("StyleBoxTexture_8bho8")
-theme_override_styles/hover = SubResource("StyleBoxTexture_mbxm6")
+[node name="Camera2D" type="Camera2D" parent="." unique_id=118966766]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=169000018]
-limit_left = 0
-limit_top = 0
-limit_right = 1152
-limit_bottom = 648
+[node name="Control" type="Control" parent="." unique_id=2075196503]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Control" unique_id=1924150790]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -445.0
+offset_top = -159.0
+offset_right = 445.0
+offset_bottom = -102.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_mbxm6")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Control/ProgressBar" unique_id=888005010]
+layout_mode = 0
+offset_left = 412.0
+offset_top = 11.0
+offset_right = 478.0
+offset_bottom = 46.0
+text = "XX.XS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Control" unique_id=1395859021]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.475
+anchor_top = 0.425
+anchor_right = 4.5
+anchor_bottom = 0.425
+offset_left = -300.0
+offset_top = -324.0
+offset_right = 302.0
+offset_bottom = -153.0
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 61
+text = "ALERT: XXXXXXXXXXXXX"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Ttitle2" type="Label" parent="Control" unique_id=1358014043]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.2
+anchor_top = 2.475
+anchor_right = 4.2
+anchor_bottom = 2.475
+offset_left = -300.0
+offset_top = -324.0
+offset_right = 302.0
+offset_bottom = -153.0
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 35
+text = "CHOOSE AN OPTION
+"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button1" type="Button" parent="Control" unique_id=792704503]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.95
+anchor_top = 3.15
+anchor_right = 7.95
+anchor_bottom = 3.15
+offset_left = -149.0
+offset_top = -197.0
+offset_right = 149.0
+offset_bottom = 153.0
+theme = ExtResource("1_uxd1m")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_c608t")
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Title" type="Label" parent="Control/Button1" unique_id=2019233858]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.38590604
+anchor_top = -0.5878469
+anchor_right = 0.47734898
+anchor_bottom = -0.5391692
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Desc" type="Label" parent="Control/Button1" unique_id=1962562518]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.115771815
+anchor_top = -0.52347267
+anchor_right = 0.2181208
+anchor_bottom = -0.5044726
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B1_Stats" type="Label" parent="Control/Button1" unique_id=1449827987]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.25838926
+anchor_top = -0.77410865
+anchor_right = -0.008389262
+anchor_bottom = -0.7292671
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="Control" unique_id=1755717134]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.15
+anchor_top = 3.15
+anchor_right = 4.15
+anchor_bottom = 3.15
+offset_left = -316.0
+offset_top = -197.0
+offset_right = -18.0
+offset_bottom = 153.0
+theme = ExtResource("1_uxd1m")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_c608t")
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Title" type="Label" parent="Control/Button2" unique_id=117444085]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.37583897
+anchor_top = -0.5878469
+anchor_right = 0.4807047
+anchor_bottom = -0.5391692
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Desc" type="Label" parent="Control/Button2" unique_id=1687002857]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.1090604
+anchor_top = -0.5220336
+anchor_right = 0.2181208
+anchor_bottom = -0.50303364
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Stats" type="Label" parent="Control/Button2" unique_id=2138271361]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.261745
+anchor_top = -0.76945245
+anchor_right = -0.011744967
+anchor_bottom = -0.724611
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="Control" unique_id=1030228228]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.8
+anchor_top = 3.2
+anchor_right = -3.725
+anchor_bottom = 3.2
+offset_left = -316.0
+offset_top = -197.0
+offset_right = -21.0
+offset_bottom = 153.0
+theme = ExtResource("1_uxd1m")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yhqhh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_c608t")
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Title" type="Label" parent="Control/Button3" unique_id=1016676712]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.37583897
+anchor_top = -0.5878469
+anchor_right = 0.4807047
+anchor_bottom = -0.5391692
+offset_left = 134.0
+offset_top = 220.0
+offset_right = 134.75
+offset_bottom = 236.44
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 22
+text = "XXXX OPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Desc" type="Label" parent="Control/Button3" unique_id=184736289]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.115771815
+anchor_top = -0.52774787
+anchor_right = 0.2181208
+anchor_bottom = -0.50874794
+offset_left = 55.0
+offset_top = 263.0
+offset_right = 213.0
+offset_bottom = 297.0
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 16
+text = "XXXXX DESCRIPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="B2_Stats" type="Label" parent="Control/Button3" unique_id=1293605876]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.261745
+anchor_top = -0.76945245
+anchor_right = -0.011744967
+anchor_bottom = -0.724611
+offset_left = 110.0
+offset_top = 455.0
+offset_right = 268.0
+offset_bottom = 580.44
+theme_override_fonts/font = SubResource("SystemFont_15nym")
+theme_override_font_sizes/font_size = 24
+text = "COST: $XXM
+PR: +X
+INTEGRITY: -X%
+"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
