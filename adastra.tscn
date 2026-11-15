@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://pryrka0m8iet" path="res://quit.gd" id="1_s3ci6"]
 [ext_resource type="Texture2D" uid="uid://cujvtier2cbio" path="res://assets/buttons_main_menu.svg" id="2_j20bd"]
 [ext_resource type="Texture2D" uid="uid://d0nctwx00aces" path="res://assets/buttons_main_menu_hover.svg" id="3_opm6b"]
+[ext_resource type="Script" uid="uid://bonnop54vuk48" path="res://newgame.gd" id="6_keybg"]
 [ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://background_animation.tscn" id="10_wlam2"]
 [ext_resource type="Script" uid="uid://dn4ujia80vxwc" path="res://main_menu.gd" id="12_menuscript"]
 
@@ -98,6 +99,8 @@ theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxTexture_nksmx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1g61b")
 theme_override_styles/hover = SubResource("StyleBoxTexture_j20bd")
+action_mode = 0
+script = ExtResource("6_keybg")
 metadata/_edit_use_anchors_ = true
 
 [node name="credits" type="Button" parent="Control" unique_id=1231307522]
@@ -138,4 +141,5 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" parent="." unique_id=733503893 instance=ExtResource("10_wlam2")]
 
+[connection signal="pressed" from="Control/play" to="Control/play" method="_on_pressed"]
 [connection signal="pressed" from="Control/quit" to="Control/quit" method="_on_pressed"]
