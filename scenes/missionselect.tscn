@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bqfktaylaa175"]
 
 [ext_resource type="PackedScene" uid="uid://dwr7yo0dws3uc" path="res://scenes/background_animation.tscn" id="1_bpevx"]
-[ext_resource type="Script" uid="uid://dbjq3yeoulwrn" path="res://scenes/camera_2d.gd" id="1_e3drc"]
+[ext_resource type="Script" uid="uid://dbjq3yeoulwrn" path="res://scripts/camera_2d.gd" id="1_e3drc"]
+[ext_resource type="FontFile" uid="uid://cka6nt8do3tat" path="res://assets/fonts/JetBrains_Mono/static/JetBrainsMono-Thin.ttf" id="1_hnilw"]
 [ext_resource type="Texture2D" uid="uid://bimprbdqha2fb" path="res://assets/graphics/planets_and_sun.svg" id="2_hs22p"]
 [ext_resource type="Theme" uid="uid://dvwpvheklhu3f" path="res://assets/graphics/new_theme.tres" id="3_4wauv"]
 [ext_resource type="Texture2D" uid="uid://6w5m6pbld1nu" path="res://assets/graphics/planets_and_sun_hover.svg" id="5_e3drc"]
 [ext_resource type="Theme" uid="uid://cuelxx86brd5t" path="res://assets/2_options_button_hover.tres" id="6_q20p0"]
+[ext_resource type="Script" uid="uid://c44cl1cq6yh70" path="res://scripts/mars.gd" id="8_ooeck"]
 
 [sub_resource type="Animation" id="Animation_q20p0"]
 length = 0.001
@@ -94,8 +96,6 @@ region_rect = Rect2(409, 1083, 205, 205)
 texture = ExtResource("5_e3drc")
 region_rect = Rect2(407, 1081, 210, 209)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_33bnl"]
-
 [sub_resource type="Animation" id="Animation_k7a1p"]
 length = 0.001
 tracks/0/type = "value"
@@ -163,45 +163,6 @@ scale = Vector2(0.81, 0.75)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1014025737]
 libraries/ = SubResource("AnimationLibrary_ooeck")
 autoplay = &"missionmain"
-
-[node name="ares2" type="Label" parent="." unique_id=2001839064]
-offset_left = 260.49384
-offset_top = -89.333336
-offset_right = 333.49384
-offset_bottom = -66.333336
-text = "Ares 2"
-metadata/_edit_use_anchors_ = true
-
-[node name="destination" type="Label" parent="." unique_id=2130882160]
-offset_left = 128.39505
-offset_top = -174.66667
-offset_right = 266.39508
-offset_bottom = -151.66667
-scale = Vector2(2.025, 2.025)
-text = "Destination: Mars"
-metadata/_edit_use_anchors_ = true
-
-[node name="ares1" type="Label" parent="." unique_id=1426671217]
-offset_left = 302.46915
-offset_top = 49.333336
-offset_right = 375.46915
-offset_bottom = 72.333336
-text = "Ares 1"
-metadata/_edit_use_anchors_ = true
-
-[node name="navleft" type="Button" parent="." unique_id=390183555]
-offset_left = 101.87656
-offset_top = -54.666668
-offset_right = 186.41977
-offset_bottom = -14.666668
-metadata/_edit_use_anchors_ = true
-
-[node name="navright" type="Button" parent="." unique_id=1112343312]
-offset_left = 325.9259
-offset_top = -56.0
-offset_right = 410.46912
-offset_bottom = -16.0
-metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1846603279]
 scale = Vector2(0.80999994, 0.75)
@@ -279,6 +240,34 @@ scale = Vector2(0.81, 0.75)
 theme = ExtResource("3_4wauv")
 theme_override_styles/normal = SubResource("StyleBoxTexture_r3cdc")
 theme_override_styles/hover = SubResource("StyleBoxTexture_e3drc")
+script = ExtResource("8_ooeck")
+metadata/_edit_use_anchors_ = true
+
+[node name="ares1" type="Label" parent="Camera2D/Node/mars" unique_id=1426671217]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.49565208
+anchor_top = -1.1325161
+anchor_right = -0.4956521
+anchor_bottom = -1.1325161
+offset_left = 85.39397
+offset_top = 113.172844
+offset_right = 158.39397
+offset_bottom = 136.17285
+theme_override_fonts/font = ExtResource("1_hnilw")
+text = "Ares 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="destination" type="Label" parent="Camera2D/Node/mars" unique_id=2130882160]
+visible = false
+layout_mode = 0
+offset_left = -75.09984
+offset_top = -110.82718
+offset_right = 62.900192
+offset_bottom = -87.82718
+scale = Vector2(2.025, 2.025)
+text = "Destination: Mars"
 metadata/_edit_use_anchors_ = true
 
 [node name="jupiter" type="Button" parent="Camera2D/Node" unique_id=766946472]
@@ -312,14 +301,14 @@ metadata/_edit_use_anchors_ = true
 
 [node name="uranus" type="Button" parent="Camera2D/Node" unique_id=2058540369]
 anchors_preset = -1
-anchor_left = -0.00086636015
-anchor_top = -0.022185456
-anchor_right = -0.05206034
-anchor_bottom = 0.25801238
-offset_left = 1134.998
-offset_top = -183.62384
-offset_right = 1437.9983
-offset_bottom = 67.37619
+anchor_left = -0.062032595
+anchor_top = -0.08854346
+anchor_right = -0.062032595
+anchor_bottom = 0.28013173
+offset_left = 1098.998
+offset_top = -157.62384
+offset_right = 1401.9983
+offset_bottom = 93.37619
 scale = Vector2(0.81, 0.75)
 theme = ExtResource("3_4wauv")
 theme_override_styles/normal = SubResource("StyleBoxTexture_sfjfy")
@@ -328,14 +317,14 @@ metadata/_edit_use_anchors_ = true
 
 [node name="neptune" type="Button" parent="Camera2D/Node" unique_id=1558268634]
 anchors_preset = -1
-anchor_left = 0.07986111
-anchor_top = 0.12500003
-anchor_right = -0.018732918
-anchor_bottom = -0.041666668
-offset_left = 1353.0
-offset_top = -153.00003
-offset_right = 1716.3333
-offset_bottom = 173.66666
+anchor_left = -0.14690262
+anchor_top = -0.17283955
+anchor_right = -0.14690262
+anchor_bottom = -0.17283955
+offset_left = 1567.2318
+offset_top = -17.0
+offset_right = 1930.5651
+offset_bottom = 309.6667
 scale = Vector2(0.81, 0.75)
 theme = ExtResource("6_q20p0")
 theme_override_styles/normal = SubResource("StyleBoxTexture_xslh6")
@@ -349,15 +338,6 @@ texture = ExtResource("2_hs22p")
 region_enabled = true
 region_rect = Rect2(672, 399, 63, 60)
 
-[node name="Button" type="Button" parent="Camera2D/Node/deimos" unique_id=1798048604]
-offset_left = -32.95347
-offset_top = -8.911245
-offset_right = 15.121269
-offset_bottom = 30.509317
-rotation = -0.5022851
-theme_override_styles/normal = SubResource("StyleBoxTexture_33bnl")
-metadata/_edit_use_anchors_ = true
-
 [node name="phobos" type="Sprite2D" parent="Camera2D/Node" unique_id=417029503]
 position = Vector2(185.01631, -76.50877)
 scale = Vector2(0.31961268, 0.2515191)
@@ -368,3 +348,9 @@ region_rect = Rect2(657, 275, 94, 94)
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=1046847217]
 libraries/ = SubResource("AnimationLibrary_evtr3")
 autoplay = &"camera"
+
+[connection signal="button_down" from="Camera2D/Node/mars" to="Camera2D" method="_on_mars_button_down"]
+[connection signal="button_up" from="Camera2D/Node/mars" to="Camera2D" method="_on_mars_button_up"]
+[connection signal="mouse_entered" from="Camera2D/Node/mars" to="Camera2D/Node/mars" method="_on_mars_mouse_entered"]
+[connection signal="mouse_exited" from="Camera2D/Node/mars" to="Camera2D/Node/mars" method="_on_mars_mouse_exited"]
+[connection signal="pressed" from="Camera2D/Node/mars" to="Camera2D" method="_on_mars_pressed"]

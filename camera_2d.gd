@@ -16,13 +16,15 @@ func _process(delta: float) -> void:
 	var direction: float = 0.0
 
 	if (left_button and left_button.button_pressed) or Input.is_action_pressed("nav_left"):
-		direction -= 1.0
+		direction -= 5.0
 		print("left")
 
 
 	if (right_button and right_button.button_pressed) or Input.is_action_pressed("nav_right"):
-		direction += 1.0
+		direction += 5.0
 		print("right")
 	position.x += direction * scroll_speed * delta
 	position.x = clamp(position.x, min_x, max_x)
+	
+	
 	
