@@ -1,8 +1,6 @@
 class_name MainMenu
 extends Control
 
-## Polishes the main-menu buttons: a soft glow and pop on hover/focus, and a
-## gently breathing menu panel behind them.
 
 const HOVER_SCALE := Vector2(1.06, 1.06)
 const HOVER_TINT := Color(0.72, 1.25, 1.32, 1.0)
@@ -37,3 +35,8 @@ func _float_panel() -> void:
 	var tween: Tween = create_tween().set_loops()
 	tween.tween_property(_panel, "modulate:a", 0.7, 2.4).set_trans(Tween.TRANS_SINE)
 	tween.tween_property(_panel, "modulate:a", 0.92, 2.4).set_trans(Tween.TRANS_SINE)
+
+func _on_play_pressed() -> void:
+	get_tree().change_scene_to_file("res://missionselect.tscn")
+	
+	
